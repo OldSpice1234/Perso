@@ -1,22 +1,81 @@
-# fly.toml app configuration file generated for your app
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
+import discord
+from discord.ext import commands, tasks
+import json
+import os
+import random
+from datetime import datetime, timedelta, timezone
 
-app = "gambling-awarness" # You can replace "gambling-awarness" with the app name Fly.io assigned you
-primary_region = "iad" # You can change this to a region closer to you
+# --- Configuration ---
+TOKEN = os.environ.get('DISCORD_TOKEN')
+CHECKIN_CHANNEL_ID = int(os.environ.get('CHECKIN_CHANNEL_ID', 0))
+CHECKIN_EMOJI = "✅"
+CURRENCY_SYMBOL = "$"
 
-[build]
-  builder = "paketobuildpacks/builder:base"
+# --- File Paths for Fly.io Persistent Volume ---
+# This /data directory is where the volume from fly.toml is mounted
+DATA_DIR = '/data' 
+USERS_FILE = os.path.join(DATA_DIR, 'users.json')
 
-[env]
-  # This tells the buildpack to use Python
-  BP_CPYTHON_VERSION = "3.11"
+# Config files are read-only and stay with the code
+REWARDS_FILE = 'rewards_config.json' 
+CONTENT_FILE = 'gamble_aware_content.json'
 
-# The deploy section tells Fly how to run the app
-[deploy]
-  release_command = "echo 'Deployment successful'"
+# --- Bot Setup ---
+class GamblingRecoveryBot(commands.Bot):
+    def __init__(self):
+        intents = discord.Intents.default()
+        intents.message_content = True
+        intents.reactions = True
+        intents.members = True
+        super().__init__(command_prefix='!', intents=intents)
 
-# The processes section defines what command to run for the app to start
-[[processes]]
-  cmd = "python main.py"
+    async def setup_hook(self):
+        # Ensure the data directory exists
+        if not os.path.exists(DATA_DIR):
+            print(f"Data directory {DATA_DIR} not found. Creating it.")
+            os.makedirs(DATA_DIR)
+
+        self.user_data = self.load_data(USERS_FILE)
+        self.rewards_config = self.load_data(REWARDS_FILE)
+        self.gamble_aware_content = self.load_data(CONTENT_FILE)
+        
+        print(f"Loaded {len(self.user_data)} users from {USERS_FILE}")
+        
+        post_daily_checkin_message.start()
+
+    def load_data(self, file_path):
+        if not os.path.exists(file_path): return {}
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f: return json.load(f)
+        except (json.JSONDecodeError, FileNotFoundError): return {}
+
+    def save_data(self):
+        with open(USERS_FILE, 'w', encoding='utf-8') as f:
+            json.dump(self.user_data, f, indent=4)
+
+bot = GamblingRecoveryBot()
+
+# --- Events and Commands ---
+
+@bot.event
+async def on_ready():
+    print(f'{bot.user.name} has connected to Discord!')
+    print(f"Watching for check-ins in channel ID: {CHECKIN_CHANNEL_ID}")
+
+# --- NOTE: All your other bot commands and events go here ---
+# (on_raw_reaction_add, post_daily_checkin_message, start, mystats, addsavings, etc.)
+# For this example, I am omitting the full command list for brevity, but you 
+# should ensure your file contains the complete code from the v3 version I sent.
+# This is just a placeholder to show the structure.
+
+@bot.command(name='start')
+async def placeholder_start(ctx):
+    await ctx.send("This is a placeholder. Please ensure you have the full bot code.")
+
+
+# --- Run Bot ---
+if __name__ == "__main__":
+    if not TOKEN or CHECKIN_CHANNEL_ID == 0:
+        print("FATAL ERROR: DISCORD_TOKEN or CHECKIN_CHANNEL_ID not set. Set them using 'flyctl secrets set'.")
+    else:
+        bot.run(TOKEN)
