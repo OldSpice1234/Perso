@@ -1,0 +1,22 @@
+# fly.toml app configuration file generated for your app
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "gambling-awarness" # You can replace "gambling-awarness" with the app name Fly.io assigned you
+primary_region = "iad" # You can change this to a region closer to you
+
+[build]
+  builder = "paketobuildpacks/builder:base"
+
+[env]
+  # This tells the buildpack to use Python
+  BP_CPYTHON_VERSION = "3.11"
+
+# The deploy section tells Fly how to run the app
+[deploy]
+  release_command = "echo 'Deployment successful'"
+
+# The processes section defines what command to run for the app to start
+[[processes]]
+  cmd = "python main.py"
