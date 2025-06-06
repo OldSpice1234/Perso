@@ -1,0 +1,58 @@
+{
+  "reasons_to_quit": {
+    "title": "Reasons to Quit Gambling",
+    "points": [
+      { "title": "Financial Freedom", "text": "Reclaim your money for things that truly matter: savings, family, hobbies, and a secure future. Stop the cycle of chasing losses and accumulating debt." },
+      { "title": "Mental Peace", "text": "Escape the constant stress, anxiety, guilt, and secrecy associated with gambling. Enjoy a clear mind and emotional stability." },
+      { "title": "Stronger Relationships", "text": "Rebuild trust and deepen connections with family and friends. Be present for them without the distraction and strain of gambling." },
+      { "title": "Improved Physical Health", "text": "Reduce stress-related health issues like insomnia, headaches, and digestive problems. Focus on a healthier lifestyle." },
+      { "title": "Rediscover Yourself", "text": "Reconnect with hobbies, passions, and goals that were overshadowed by gambling. Find joy in activities that provide genuine fulfillment." }
+    ]
+  },
+  "impact_of_gambling": {
+    "title": "The Impact of Gambling",
+    "points": [
+      { "title": "Financial Devastation", "text": "Leads to debt, loss of savings, bankruptcy, and inability to meet basic needs. It can destroy long-term financial security." },
+      { "title": "Emotional Turmoil", "text": "Causes depression, anxiety, hopelessness, shame, and mood swings. It can lead to suicidal thoughts in severe cases." },
+      { "title": "Relationship Breakdown", "text": "Results in broken trust, arguments, isolation from loved ones, and divorce due to lies and financial strain." },
+      { "title": "Work & School Problems", "text": "Decreased performance, absenteeism, and loss of job or educational opportunities due to preoccupation with gambling." }
+    ]
+  },
+  "coping_mechanisms": {
+    "title": "Healthy Coping Mechanisms (Distractions)",
+    "points": [
+      { "title": "The 15-Minute Walk", "text": "Put on your shoes and walk outside for just 15 minutes. Focus on your surroundings: the sounds, the sights, the air. The goal is to change your environment and break the thought cycle." },
+      { "title": "Engage Your Hands", "text": "Do something that requires manual focus. Examples: solve a Rubik's cube, do the dishes, play an instrument, draw, or work on a small craft." },
+      { "title": "The '5-4-3-2-1' Grounding Technique", "text": "Acknowledge FIVE things you see around you. FOUR things you can touch. THREE things you can hear. TWO things you can smell. ONE thing you can taste. This pulls you into the present moment." },
+      { "title": "Call or Text a Support Person", "text": "Reach out to a trusted friend or family member. You don't have to talk about the urge; just have a normal conversation to distract yourself." },
+      { "title": "Listen to a Podcast or Music", "text": "Put on headphones and listen to an engaging podcast, an audiobook, or a powerful music playlist. Let the sound occupy your mental space." }
+    ]
+  },
+  "identifying_triggers": {
+    "title": "Identifying Your Triggers",
+    "points": [
+      { "title": "Emotional States (HALT)", "text": "Are you Hungry, Angry, Lonely, or Tired? These basic needs can lower your defenses and make you vulnerable to urges. Address the root feeling first." },
+      { "title": "Environmental Cues", "text": "Seeing gambling ads, being near gambling venues, certain sounds, or even specific times of day can be a trigger. Recognize them and plan to avoid them." },
+      { "title": "Financial Situations", "text": "Having unexpected cash (a bonus) or, conversely, feeling desperate for money can both be powerful triggers. Create a plan for how to handle both situations." },
+      { "title": "Boredom or Unstructured Time", "text": "Long periods with nothing to do can let your mind wander to gambling. Plan your free time with healthy, engaging activities." }
+    ]
+  },
+  "financial_recovery": {
+    "title": "Tips for Financial Recovery",
+    "points": [
+      { "title": "Create a Simple Budget", "text": "Track all income and expenses. Use an app or a simple notebook. Knowing where your money goes is the first step to controlling it." },
+      { "title": "Debt Management", "text": "If you have debts, list them all out. Consider contacting a non-profit credit counseling agency for a structured repayment plan. Don't take on new debt to pay old debt." },
+      { "title": "Create Barriers", "text": "Limit your access to money. Consider self-exclusion from casinos/apps, let a trusted person manage your finances temporarily, or carry limited cash." },
+      { "title": "Set Small, Achievable Goals", "text": "Focus on saving a small amount first, like $20 a week. Achieving small goals builds momentum and confidence for larger ones." }
+    ]
+  },
+  "external_resources": {
+    "title": "Professional Help & Resources",
+    "points": [
+      { "title": "Gamblers Anonymous (International)", "text": "A fellowship of people who share their experience, strength and hope with each other that they may solve their common problem and help others to recover from a gambling problem.\n[Find a Meeting](https://www.gamblersanonymous.org/ga/)" },
+      { "title": "National Problem Gambling Helpline (US)", "text": "Call or text the helpline 24/7 for confidential support and resources. Call: 1-800-522-4700 or visit [ncpgambling.org](https://www.ncpgambling.org/)" },
+      { "title": "GamCare (UK)", "text": "Provides information, advice and support for anyone affected by problem gambling in the UK. Call 0808 8020 133 or visit [gamcare.org.uk](https://www.gamcare.org.uk/)" },
+      { "title": "Your-Life-Your-Voice (Teens)", "text": "Operated by Boys Town, this is a 24/7 helpline for teens and young adults dealing with any issue, including gambling. Call 1-800-448-3000." }
+    ]
+  }
+}

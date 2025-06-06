@@ -1,0 +1,87 @@
+{
+  "daily_rewards": {
+    "day_1": [
+      "A sense of initial peace and restored control.",
+      "The quiet satisfaction of taking the first step.",
+      "A moment to appreciate your own strength for starting.",
+      "The feeling of a weight being lifted, however small.",
+      "A conscious breath, acknowledging your commitment."
+    ],
+    "day_3": [
+      "Reduced anxiety about finances, even if just slightly.",
+      "Feeling a bit more secure about your financial situation.",
+      "One less day of financial worry weighing on your mind.",
+      "A conscious decision to avoid looking at gambling-related sites or apps.",
+      "Putting aside even a small amount of money you might have gambled."
+    ],
+    "day_5": [
+      "The joy of a small, non-monetary personal treat.",
+      "Indulging in a favorite (non-triggering) simple pleasure.",
+      "Taking an extra 15 minutes for a relaxing activity you enjoy.",
+      "Listening to an uplifting podcast or audiobook chapter.",
+      "Preparing and savoring your favorite simple drink (tea, coffee)."
+    ],
+    "day_7": [
+      "A noticeable boost in your self-esteem and confidence.",
+      "Feeling prouder of your accomplishments this week.",
+      "Recognizing your growing inner strength and resilience.",
+      "Walking a little taller with a sense of achievement.",
+      "The deep satisfaction of meeting a week-long goal."
+    ],
+    "day_14": [
+      "Feeling physically healthier due to reduced stress.",
+      "Noticing fewer stress-related symptoms (e.g., headaches, tension).",
+      "Having more energy for physical activities.",
+      "Making a conscious choice for a healthy meal or snack.",
+      "Taking a brisk walk or doing some light exercise."
+    ],
+    "day_30": [
+      "Significant financial savings becoming visible; plan a responsible celebration!",
+      "Calculating the exact amount saved and feeling proud.",
+      "Opening a dedicated savings account for a specific goal.",
+      "Treating yourself to a small, meaningful item you've wanted (non-gambling).",
+      "Planning a special meal (home-cooked or budget-friendly) to mark the occasion."
+    ]
+  },
+  "weekly_rewards": {
+    "week_1": [
+      "One Week Down! Reward Idea: Plan a truly relaxing evening just for yourself.",
+      "Celebrate 7 days! Idea: Enjoy a favorite movie or TV show marathon.",
+      "Milestone - 1 Week! Idea: Take a long, soothing bath or shower with some nice music."
+    ],
+    "week_2": [
+      "Two Weeks Strong! Idea: Enjoy a favorite meal (home-cooked or budget-friendly takeout).",
+      "14 Days Clear! Idea: Explore a new local park or nature trail.",
+      "Milestone - 2 Weeks! Idea: Dedicate an afternoon to a creative hobby (drawing, writing, music)."
+    ],
+    "week_4": [
+      "One Month Milestone! Idea: A small, meaningful, and responsible purchase you've postponed.",
+      "~30 Days Champion! Idea: Plan a special 'self-care Sunday' or a dedicated relaxation day.",
+      "Milestone - 4 Weeks! Idea: Start a journal to document your thoughts and progress."
+    ]
+  },
+  "monthly_rewards": {
+    "month_2": [
+      "Two Months Consistent! Idea: Plan a day trip to a nearby town or a new local experience.",
+      "60 Days Steady! Idea: Invest in a piece of equipment for a healthy hobby (e.g., new running shoes).",
+      "Milestone - 2 Months! Idea: Treat yourself to a professional service you've been putting off."
+    ],
+    "month_3": [
+      "Three Months Resilient! Idea: Invest in a skill-building course or workshop that interests you.",
+      "90 Days Dedicated! Idea: Plan a weekend getaway (budget-permitting) or a special staycation.",
+      "Milestone - 3 Months! Idea: Purchase a quality item that will last and bring you joy."
+    ],
+    "month_6": [
+      "Half a Year of Freedom! Reward Idea: A significant responsible purchase or experience you've saved for.",
+      "180 Days Transformed! Reward Idea: Plan a mini-vacation or a special celebration of your progress.",
+      "Milestone - 6 Months! Reward Idea: Make a tangible step towards a major life goal."
+    ]
+  },
+  "yearly_rewards": {
+    "year_1": [
+      "ONE YEAR GAMBLE-FREE! This is monumental. Idea: Plan a significant, life-affirming vacation you've diligently saved for.",
+      "365 Days Victorious! Idea: Achieve a major savings goal (e.g., down payment on something, significant investment).",
+      "Milestone - 1 Year! Idea: Invest in a substantial personal development opportunity (e.g., a certification)."
+    ]
+  }
+}
